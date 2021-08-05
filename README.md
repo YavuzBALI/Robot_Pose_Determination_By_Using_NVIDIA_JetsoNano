@@ -16,7 +16,13 @@ Therefore, robot pose detection with high precision in the lowest processing tim
    ![1](https://user-images.githubusercontent.com/84620286/128405283-802e0e4c-8617-4bd6-aa5f-97330be3fbfd.PNG)
 
 # Summary
-- 
+- Robot detection was found by color masking with the help of OpenCV library.
+- Robot angles were determined with the help of Deep learning algorithms.
+- The color and angle of the robots are displayed at the top right of the robots.
+- The dataset consists of 1440 manually generated images for 72 classes.
+
+# Table of Content
+
 
 
 
