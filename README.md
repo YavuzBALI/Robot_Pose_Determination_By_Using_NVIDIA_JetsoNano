@@ -12,7 +12,8 @@ used to access angle information of robots with positions. Deep learning algorit
 the project in order to be able to calculate deep learning algorithms and provide high performance inference. A real-time game is in progress in the RoboCup football league. 
 Therefore, robot pose detection with high precision in the lowest processing time is aimed in the project.
 
-
+#Summary
+- gkbkjjlnkj
 
 
 
