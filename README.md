@@ -58,7 +58,7 @@ total of 1440 images were created for 72 classes. 80% of these images were used 
 The new model RoboCup-III was trained with a dataset of 1440 images. Training was carried out using 8 batch sizes and 18 epochs. The learning rate was chosen as 0.0001. Adam
 optimizer was used. The following images show the loss, accuracy graph and the final evolution metric value table of the model, respectively.
 
-![Loss Graph](https://user-images.githubusercontent.com/84620286/128518637-6c5de31d-5f14-40e8-a817-6099adccc429.PNG)
+![Loss Graph](https://user-images.githubusercontent.com/84620286/128518817-ac8c2ad1-ed11-4a05-bd92-4ef57a204f02.PNG)
 ![Accuracy Graph](https://user-images.githubusercontent.com/84620286/128518640-867e4df8-5f3d-4424-8f36-470399be07c9.PNG)
 
 ![Evaluate Table](https://user-images.githubusercontent.com/84620286/128518659-c6796bb5-be0b-49f2-9fb5-aeb68403f358.PNG)
