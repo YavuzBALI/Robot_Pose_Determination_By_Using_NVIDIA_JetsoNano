@@ -1,3 +1,4 @@
+
 # Robot_Pose_Determination_By_Using_NVIDIA_JetsoNano
 This repo contains the codes and explanations of my graduation thesis that I carried out at Dokuz Eylül University in 2021.
 
@@ -36,4 +37,4 @@ is made for 2 different colors. It includes the colors green and red. The colors
 converted from RGB format to HSV format. Then, 2 different maskings in green and red are applied. HSV values of colors are required for masking. HSV values are different for
 each color. Table  shows the HSV thresholds for colors.Then, the values of the robot positions in the coordinate plane can be obtained by applying the contour to the filtered
 images.
-
+![HSV_Treshold](https://user-images.githubusercontent.com/84620286/128512685-c3c2e88c-f034-4941-a21b-456a4f0f465a.PNG)
