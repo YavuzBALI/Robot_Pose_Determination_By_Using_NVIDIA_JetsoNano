@@ -22,12 +22,12 @@ Therefore, robot pose detection with high precision in the lowest processing tim
 - The dataset consists of 1440 manually generated images for 72 classes.
 
 # Table of Content
-1- Robot Position Detection
-2- Model and Dataset
-3- Training
-4- Evaluate
-5- My Observations About the Task
-6- Discussion
+1. Robot Position Detection
+2. Model and Dataset
+3. Training
+4. Evaluate
+5. My Observations About the Task
+6. Discussion
 
 
 
