@@ -65,7 +65,7 @@ optimizer was used. The following images show the loss, accuracy graph and the f
 
 
 # 4. Perform
-Prediction was done on Jetson Nano Developer kit. Weight parameters were set to FP16 and FP32 parameters using the TensorRT library.You can find the conversion code at Convert_Tf-TRT.py . The FPS values of the model in different
+Prediction was done on Jetson Nano Developer kit. Weight parameters were set to FP16 and FP32 parameters using the TensorRT library.You can find the conversion code at Convert_TF-TRT.py . The FPS values of the model in different
 parameters are given in the table below.
 
 ![Perform Table](https://user-images.githubusercontent.com/84620286/128520129-f30fe547-c037-4d1c-886a-0c38cc59f81f.PNG)
