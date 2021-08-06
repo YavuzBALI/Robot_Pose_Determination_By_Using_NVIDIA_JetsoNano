@@ -44,5 +44,6 @@ images.
 Deep learning algorithms were used to determine the angles of the robots. Robots whose positions are known are cropped to size, including only one robot, and
 given as input to the model for prediction. The model was created using the CNN architecture. The RoboCup-1 model used in Ayşe Ezgi Kabukuçu's project "RoboCup
 Robot Localization by Using Deep Learning Principle" is based. This model was developed to achieve high FPS. The RoboCup-III model was presented as a solution.
+
 ![RoboCup-III](https://user-images.githubusercontent.com/84620286/128514513-46740e47-7e55-4965-b651-3ade52ba34ae.PNG)
 
