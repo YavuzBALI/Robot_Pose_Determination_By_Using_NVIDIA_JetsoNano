@@ -65,7 +65,19 @@ optimizer was used. The following images show the loss, accuracy graph and the f
 
 
 # 4. Perform
+Prediction was done on Jetson Nano Developer kit. Weight parameters were set to FP16 and FP32 parameters using the TensorRT library. The FPS values of the model in different
+parameters are given in the table below.
 
+![Perform Table](https://user-images.githubusercontent.com/84620286/128520129-f30fe547-c037-4d1c-886a-0c38cc59f81f.PNG)
 
+# 5. My Observations About the Task
 
+When the performance values are examined, it is seen that the effect of the TensorRT library in small models is small. In addition, the use of vehicle location detection as a
+filtering method and angle detection as a deep learning algorithm causes a decrease in FPS. YOLO etc. By solving both problems in a single source by using algorithms, results
+can be obtained in higher FPS parameters. In addition, with more data, the degree differences can be reduced. Angle estimation can be made with 1, 2 or 3 degree differences.
 
+# 6. Discussion
+
+If you have any question and suggestion, please do not hesitate to contact me.
+
+# Thanks!!!!
