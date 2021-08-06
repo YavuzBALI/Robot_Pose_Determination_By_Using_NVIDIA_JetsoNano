@@ -21,6 +21,7 @@ Therefore, robot pose detection with high precision in the lowest processing tim
 - Robot angles were determined with the help of Deep learning algorithms.
 - The color and angle of the robots are displayed at the top right of the robots.
 - The dataset consists of 1440 manually generated images for 72 classes.
+- Jetson Nano 4 GB was used as the processor.
 
 # Table of Content
 1. Robot Position Detection
@@ -38,3 +39,49 @@ converted from RGB format to HSV format. Then, 2 different maskings in green and
 each color. Table  shows the HSV thresholds for colors.Then, the values of the robot positions in the coordinate plane can be obtained by applying the contour to the filtered
 images.
 ![HSV_Treshold](https://user-images.githubusercontent.com/84620286/128512685-c3c2e88c-f034-4941-a21b-456a4f0f465a.PNG)
+
+# 2. Model and Dataset
+Deep learning algorithms were used to determine the angles of the robots. Robots whose positions are known are cropped to size, including only one robot, and given as input to
+the model for prediction. The model was created using the CNN architecture. The RoboCup-1 model used in Ayşe Ezgi Kabukuçu's project "RoboCup Robot Localization by Using Deep
+Learning Principle" is based. This model was developed to achieve high FPS. The RoboCup-III model was presented as a solution.
+
+Model: "RoboCup-III"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 101, 101, 20)      1520      
+_________________________________________________________________
+batch_normalization (BatchNo (None, 101, 101, 20)      80        
+_________________________________________________________________
+activation (Activation)      (None, 101, 101, 20)      0         
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 50, 50, 20)        0         
+_________________________________________________________________
+dropout (Dropout)            (None, 50, 50, 20)        0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 50, 50, 30)        72630     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 50, 50, 30)        120       
+_________________________________________________________________
+activation_1 (Activation)    (None, 50, 50, 30)        0         
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 25, 25, 30)        0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 25, 25, 30)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 25, 25, 10)        14710     
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 25, 25, 10)        40        
+_________________________________________________________________
+activation_2 (Activation)    (None, 25, 25, 10)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 6250)              0         
+_________________________________________________________________
+dense (Dense)                (None, 72)                450072    
+_________________________________________________________________
+activation_3 (Activation)    (None, 72)                0         
+=================================================================
+Total params: 539,172
+Trainable params: 539,052
+Non-trainable params: 120
+_________________________________________________________________
