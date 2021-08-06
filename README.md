@@ -28,8 +28,9 @@ Therefore, robot pose detection with high precision in the lowest processing tim
 1. Robot Position Detection
 2. Model and Dataset
 3. Training and Evaluate
-4. My Observations About the Task
-5. Discussion
+4. Perform
+5. My Observations About the Task
+6. Discussion
 
 # 1. Robot Position Detection
 
@@ -61,4 +62,9 @@ optimizer was used. The following images show the loss, accuracy graph and the f
 ![Accuraccy Graph](https://user-images.githubusercontent.com/84620286/128518059-8b3d5e5e-acb9-461e-9034-d52cb9202419.PNG)
 
 ![Evaluate Table](https://user-images.githubusercontent.com/84620286/128518069-c5bed163-ae3a-4a6e-81c0-ee6b76e7a006.PNG)
+
+# 4. Perform
+
+
+
 
