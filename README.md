@@ -29,5 +29,11 @@ Therefore, robot pose detection with high precision in the lowest processing tim
 5. My Observations About the Task
 6. Discussion
 
+# 1. Robot Position Detection
 
+   The filtering method was used to determine the robot position. Thanks to the colors of the circles on the robots, it allows us to determine their positions. Robot detection
+is made for 2 different colors. It includes the colors green and red. The colors of the robots also form the identity of the robots. First, the image taken from the camera is
+converted from RGB format to HSV format. Then, 2 different maskings in green and red are applied. HSV values of colors are required for masking. HSV values are different for
+each color. Table  shows the HSV thresholds for colors.Then, the values of the robot positions in the coordinate plane can be obtained by applying the contour to the filtered
+images.
 
