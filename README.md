@@ -22,14 +22,14 @@ Therefore, robot pose detection with high precision in the lowest processing tim
 - The color and angle of the robots are displayed at the top right of the robots.
 - The dataset consists of 1440 manually generated images for 72 classes.
 - Jetson Nano 4 GB was used as the processor.
+- Colab used for training
 
 # Table of Content
 1. Robot Position Detection
 2. Model and Dataset
-3. Training
-4. Evaluate
-5. My Observations About the Task
-6. Discussion
+3. Training and Evaluate
+4. My Observations About the Task
+5. Discussion
 
 # 1. Robot Position Detection
 
@@ -46,4 +46,15 @@ given as input to the model for prediction. The model was created using the CNN 
 Robot Localization by Using Deep Learning Principle" is based. This model was developed to achieve high FPS. The RoboCup-III model was presented as a solution.
 
 ![RoboCup-III](https://user-images.githubusercontent.com/84620286/128514513-46740e47-7e55-4965-b651-3ade52ba34ae.PNG)
+
+The images created by rotating the images taken manually at 0 degrees with a difference of 5 degrees were used as the data set. A total of 20 images were created at 0 degrees. A
+total of 1440 images were created for 72 classes. 80% of these images were used for training and 20% for validation.
+
+![Example of dataset](https://user-images.githubusercontent.com/84620286/128515873-ddf5d9dc-f856-4f6a-a06e-c0b2231d1726.PNG)
+
+# 3. Training and Evaluate
+
+The new model RoboCup-III was trained with a dataset of 1440 images. Training was carried out using 8 batch sizes and 18 epochs. The learning rate was chosen as 0.0001. Adam
+optimizer was used. The following images show the loss, accuracy graph and the final evolution metric value table of the model, respectively.
+
 
